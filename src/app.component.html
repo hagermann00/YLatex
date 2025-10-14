@@ -1,0 +1,65 @@
+<main class="container mx-auto p-4 sm:p-6 lg:p-8 min-h-screen flex flex-col items-center">
+  <header class="w-full max-w-4xl text-center mb-8">
+    <h1 class="text-4xl sm:text-5xl font-bold text-brand-navy">
+      Y-It Productions
+    </h1>
+    <p class="text-xl sm:text-2xl text-brand-rust font-semibold mt-2">
+      LaTeX Assembler (Module 4)
+    </p>
+    <p class="text-brand-gray-blue mt-2 max-w-2xl mx-auto">
+      Enter a side-hustle topic to generate the text, image prompts, and assemble the final KDP-ready LaTeX file.
+    </p>
+  </header>
+
+  <section class="w-full max-w-2xl bg-white/60 backdrop-blur-sm p-6 rounded-2xl shadow-lg border border-brand-gray-blue/20">
+    <div class="flex flex-col sm:flex-row gap-4">
+      <input
+        type="text"
+        [value]="topic()"
+        (input)="updateTopic($event)"
+        placeholder="e.g., Dropshipping, Print-on-Demand"
+        class="flex-grow w-full px-4 py-3 text-lg bg-white rounded-lg border-2 border-brand-gray-blue focus:ring-2 focus:ring-brand-rust focus:border-brand-rust outline-none transition duration-200"
+        [disabled]="isLoading()"
+      />
+      <button
+        (click)="generateBook()"
+        [disabled]="!topic() || isLoading()"
+        class="w-full sm:w-auto px-8 py-3 text-lg font-bold text-white bg-brand-rust rounded-lg hover:opacity-90 transition-all duration-200 disabled:bg-gray-400 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+      >
+        @if (isLoading()) {
+          <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+          </svg>
+          Generating...
+        } @else {
+          Assemble Book
+        }
+      </button>
+    </div>
+  </section>
+
+  @if (isLoading()) {
+    <section class="w-full max-w-2xl mt-8 text-center p-6 bg-white/60 rounded-2xl shadow-lg border border-brand-gray-blue/20">
+      <h3 class="text-xl font-semibold text-brand-navy">Hold on to your bootstraps...</h3>
+      <p class="text-brand-gray-blue mt-2">{{ progressMessage() }}</p>
+      <div class="w-full bg-brand-gray-blue/20 rounded-full h-2.5 mt-4">
+        <div class="bg-brand-rust h-2.5 rounded-full animate-pulse" style="width: 75%"></div>
+      </div>
+    </section>
+  }
+
+  @if (error()) {
+    <section class="w-full max-w-2xl mt-8 p-4 bg-red-100 border-l-4 border-red-500 text-red-700 rounded-lg">
+      <p class="font-bold">Generation Error</p>
+      <p>{{ error() }}</p>
+    </section>
+  }
+
+  @if (generatedContent(); as content) {
+    <section class="w-full max-w-4xl mt-8 flex flex-col">
+      <h2 class="text-2xl font-bold text-brand-navy mb-4 text-center">Assembly Complete</h2>
+      <app-latex-preview [latexCode]="generatedLatex()" [bookContent]="content"></app-latex-preview>
+    </section>
+  }
+</main>

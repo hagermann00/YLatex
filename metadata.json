@@ -1,0 +1,5 @@
+{
+  "name": "Y-It LaTeX Assembler (Module 4)",
+  "description": "An application to generate a KDP-ready LaTeX document from a given topic, bridging content generation with final formatting. It automatically generates chapter text, comic prompts, case studies, and chart descriptions, then assembles them into a complete .tex file.",
+  "requestFramePermissions": []
+}
