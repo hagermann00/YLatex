@@ -1,0 +1,15 @@
+{
+  "api_keys": {
+    "gemini": "YOUR_API_KEY_HERE"
+  },
+  "steps": {
+    "01_research": { "mode": "manual" },
+    "02_gemini_draft": { "mode": "auto" },
+    "03_claude_rewrite": { "mode": "manual" },
+    "04_image_generation": { "mode": "manual" },
+    "05_kdp_assembly": { "mode": "auto" },
+    "06_ebook_assembly": { "mode": "auto" },
+    "07_digital_assembly": { "mode": "auto" },
+    "08_podcast_assembly": { "mode": "auto" }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "steps_completed": {
+    "01_research": true,
+    "02_gemini_draft": true,
+    "03_claude_rewrite": false,
+    "04_image_generation": false,
+    "05_kdp_assembly": false,
+    "06_ebook_assembly": false,
+    "07_digital_assembly": false,
+    "08_podcast_assembly": false
+  }
+}
