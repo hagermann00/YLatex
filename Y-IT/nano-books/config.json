@@ -1,0 +1,398 @@
+{
+  "project": {
+    "name": "Y-IT Nano-Books",
+    "version": "1.0.0",
+    "description": "Multi-format reality checks for hyped business opportunities",
+    "status": "Strategic framework complete, ready for production"
+  },
+
+  "format_specifications": {
+    "print": {
+      "size": "6x9 inches",
+      "page_count": {
+        "min": 12,
+        "target": 14,
+        "max": 16
+      },
+      "word_count": {
+        "min": 3000,
+        "target": 4000,
+        "max": 5000
+      },
+      "image_count": 6,
+      "resolution": "300 DPI",
+      "color_mode": "CMYK",
+      "bleed": "0.125 inches",
+      "margins": {
+        "inner": "0.75 inches",
+        "outer": "0.5 inches",
+        "top": "0.75 inches",
+        "bottom": "0.75 inches"
+      },
+      "typography": {
+        "body_font": "11pt serif or sans-serif",
+        "body_line_height": "1.4",
+        "heading_font": "Bold sans-serif",
+        "monospace_font": "Courier or Consolas (for ASCII tables)"
+      }
+    },
+
+    "web": {
+      "platform": "Responsive web app",
+      "features": [
+        "Expandable sections",
+        "Interactive calculators",
+        "Progress tracking",
+        "Annotations",
+        "Bookmarking",
+        "Search functionality"
+      ],
+      "additional_content": [
+        "All 7 case studies (vs 3 in print)",
+        "Interactive cost calculators",
+        "Animated charts",
+        "Guru quote database",
+        "Platform comparison tool",
+        "Where Are They Now updates"
+      ]
+    },
+
+    "podcast": {
+      "episode_length": "20-25 minutes",
+      "format": "Extended analysis beyond written content",
+      "segments": [
+        "Opening: Key statistics hook",
+        "Segment 1: Real entrepreneur interview",
+        "Segment 2: Guru Roast (pitch dissection)",
+        "Segment 3: Calculator Corner",
+        "Closing: Cross-sell + CTA"
+      ],
+      "distribution": [
+        "Spotify",
+        "Apple Podcasts",
+        "YouTube"
+      ]
+    },
+
+    "ai_evaluator": {
+      "output": "1-2 page PDF via email",
+      "function": "Brutal product/idea analysis with book citations",
+      "purpose": "Lead magnet",
+      "conversion_funnel": [
+        "Free roast",
+        "$2.99 print",
+        "$7.99 web",
+        "$99/year subscription"
+      ]
+    }
+  },
+
+  "topics": [
+    {
+      "id": "dropshipping",
+      "title": "Why Your Dropship Will Fail",
+      "status": "In development",
+      "ai_evaluator": "Roast My Product Idea"
+    },
+    {
+      "id": "pod",
+      "title": "Why Your T-Shirt Empire Will Fail",
+      "status": "Planned",
+      "ai_evaluator": "Roast My T-Shirt Design"
+    },
+    {
+      "id": "affiliate",
+      "title": "Why Your Niche Site Will Fail",
+      "status": "Planned",
+      "ai_evaluator": "Roast My Niche Site Idea"
+    },
+    {
+      "id": "courses",
+      "title": "Why Your Course Will Fail",
+      "status": "Planned",
+      "ai_evaluator": "Roast My Course Idea"
+    },
+    {
+      "id": "amazon-fba",
+      "title": "Why Your Amazon Business Will Fail",
+      "status": "Planned",
+      "ai_evaluator": "Roast My Amazon Product"
+    },
+    {
+      "id": "agency",
+      "title": "Why Your Agency Will Fail",
+      "status": "Planned",
+      "ai_evaluator": "Roast My Agency Idea"
+    },
+    {
+      "id": "coaching",
+      "title": "Why Your Coaching Business Will Fail",
+      "status": "Planned",
+      "ai_evaluator": "Roast My Coaching Offer"
+    }
+  ],
+
+  "pricing": {
+    "individual": {
+      "print": 2.99,
+      "digital_download": 4.99,
+      "web_version": 7.99,
+      "podcast": "Free (marketing) or Patreon premium"
+    },
+    "bundles": {
+      "print_plus_digital": 4.99,
+      "digital_plus_interactive": 9.99,
+      "all_formats_plus_audio": 12.99,
+      "all_7_print": 14.99,
+      "complete_digital_library": 19.99,
+      "annual_subscription": 99.00
+    }
+  },
+
+  "content_structure": {
+    "print_sections": [
+      {
+        "page": 1,
+        "title": "Title Page",
+        "word_count": 50,
+        "images": 1,
+        "description": "Hero illustration + QR code"
+      },
+      {
+        "pages": "2-3",
+        "title": "The Lie & The Math",
+        "word_count": 1000,
+        "images": 0,
+        "subsections": [
+          "What They Promise (300 words)",
+          "What The Data Shows (700 words)"
+        ]
+      },
+      {
+        "pages": "4-7",
+        "title": "Tales from the Trenches",
+        "word_count": 1600,
+        "images": 3,
+        "subsections": [
+          "Case Study 1: Trust Fund Failure (500 words)",
+          "Case Study 2: Spiritual/Wellness Type (500 words)",
+          "Case Study 3: Pyrrhic Victory (500 words)",
+          "4 Brief Mentions (100 words)"
+        ]
+      },
+      {
+        "pages": "8-9",
+        "title": "The Cost Breakdown",
+        "word_count": 650,
+        "images": 1,
+        "subsections": [
+          "The Real Math (600 words)",
+          "Guru Quote Box (50 words)"
+        ]
+      },
+      {
+        "pages": "10-11",
+        "title": "Decision Framework",
+        "word_count": 800,
+        "images": 1,
+        "subsections": [
+          "When it MIGHT work (300 words)",
+          "When it DEFINITELY won't work (300 words)",
+          "Better Alternatives (200 words)"
+        ]
+      },
+      {
+        "page": 12,
+        "title": "Resources & Next Steps",
+        "word_count": 350,
+        "images": 0,
+        "subsections": [
+          "Test Your Idea Free (100 words)",
+          "Complete Y-IT Series (150 words)",
+          "Web Version Upgrade (100 words)"
+        ]
+      }
+    ]
+  },
+
+  "image_inventory": {
+    "print_images": [
+      {
+        "id": 1,
+        "name": "Cover",
+        "location": "Exterior",
+        "size": "6.125 x 9.25 inches (with bleed)",
+        "type": "Typography-forward design + small icon + QR code"
+      },
+      {
+        "id": 2,
+        "name": "Title Page Hero",
+        "location": "Page 1",
+        "size": "4.5 x 4 inches",
+        "type": "Split-frame illustration (promise vs reality)"
+      },
+      {
+        "id": 3,
+        "name": "Case Study Icon 1",
+        "location": "Pages 4-5",
+        "size": "1.5 x 1.5 inches",
+        "type": "Trust Fund Failure archetype icon"
+      },
+      {
+        "id": 4,
+        "name": "Case Study Icon 2",
+        "location": "Pages 5-6",
+        "size": "1.5 x 1.5 inches",
+        "type": "Spiritual/Wellness archetype icon"
+      },
+      {
+        "id": 5,
+        "name": "Case Study Icon 3",
+        "location": "Pages 6-7",
+        "size": "1.5 x 1.5 inches",
+        "type": "Pyrrhic Victory archetype icon"
+      },
+      {
+        "id": 6,
+        "name": "Cost Breakdown Table",
+        "location": "Page 8",
+        "size": "Half page",
+        "type": "ASCII-style table (text-based)"
+      },
+      {
+        "id": 7,
+        "name": "Decision Flowchart",
+        "location": "Page 10",
+        "size": "Half page",
+        "type": "ASCII-style flowchart (text-based)"
+      },
+      {
+        "id": 8,
+        "name": "Back Cover",
+        "location": "Exterior",
+        "size": "6.125 x 9.25 inches (with bleed)",
+        "type": "QR code + pull quote + cross-sell icons"
+      }
+    ],
+    "web_exclusive_images": [
+      "6-panel comic strip (animated)",
+      "7 full character portraits",
+      "Interactive cost calculator UI",
+      "Animated timeline visualization",
+      "Platform comparison charts",
+      "Guru quote database interface"
+    ]
+  },
+
+  "brand_voice": {
+    "tone": "Satirical but empathetic",
+    "characteristics": [
+      "Data-driven",
+      "Professional irony",
+      "Corporate dystopia meets dark comedy",
+      "Actionable cynicism"
+    ],
+    "avoid": [
+      "Motivational fluff",
+      "Just work harder advice",
+      "Guru worship",
+      "Vague platitudes",
+      "False hope"
+    ],
+    "signature_phrases": [
+      "Beautiful, stubborn fool",
+      "The math nobody tells you",
+      "92% fail within 12 months",
+      "The gurus won't tell you why. We will."
+    ]
+  },
+
+  "production_timeline": {
+    "per_nano_book": "2-3 weeks",
+    "all_7_topics": "14-21 weeks (3.5-5 months)",
+    "phases": [
+      {
+        "week": 1,
+        "phase": "Content Creation",
+        "tasks": [
+          "Write 4,000-word manuscript",
+          "Create ASCII tables and decision trees",
+          "Commission illustrations"
+        ]
+      },
+      {
+        "week": 2,
+        "phase": "Multi-Format Development",
+        "tasks": [
+          "Design print layout",
+          "Build web interactive features",
+          "Script podcast episode"
+        ]
+      },
+      {
+        "week": 3,
+        "phase": "Production & Launch",
+        "tasks": [
+          "Finalize print for KDP",
+          "Deploy web version",
+          "Record and edit podcast",
+          "Launch AI evaluator landing page"
+        ]
+      }
+    ]
+  },
+
+  "success_metrics": {
+    "print": {
+      "units_sold_per_month": 100,
+      "amazon_rating": "4+ stars",
+      "qr_scan_rate": "20%+"
+    },
+    "web": {
+      "conversion_rate": "15%+ (print to web)",
+      "time_on_page": "10+ minutes",
+      "calculator_usage": "60%+"
+    },
+    "podcast": {
+      "downloads_per_episode": 1000,
+      "retention_rate": "50%+",
+      "cta_conversion": "5%+"
+    },
+    "ai_evaluator": {
+      "lead_capture_rate": "60%+",
+      "email_open_rate": "30%+",
+      "conversion_to_paid": "10%+"
+    },
+    "overall": {
+      "customer_lifetime_value": "$50+",
+      "annual_subscription_conversion": "5%+",
+      "cross_topic_engagement": "30%+"
+    }
+  },
+
+  "technology_stack": {
+    "print_production": [
+      "Amazon KDP (print-on-demand)",
+      "Adobe InDesign or Affinity Publisher (layout)",
+      "Adobe Illustrator or Inkscape (illustrations)"
+    ],
+    "web_platform": [
+      "React or Next.js (frontend)",
+      "Node.js (backend)",
+      "PostgreSQL (database)",
+      "Stripe (payments)",
+      "Vercel or AWS (hosting)"
+    ],
+    "podcast_production": [
+      "Audacity or Adobe Audition (editing)",
+      "Anchor.fm or Libsyn (distribution)",
+      "Riverside.fm or Zencastr (remote interviews)"
+    ],
+    "ai_evaluator": [
+      "OpenAI API or Anthropic Claude API",
+      "Vercel (hosting)",
+      "ConvertKit or Mailchimp (email)",
+      "Stripe (payment processing for upgrades)"
+    ]
+  }
+}
